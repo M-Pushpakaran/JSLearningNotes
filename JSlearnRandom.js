@@ -23,3 +23,20 @@ function randomIntegerincldng(min, max){
     return Math.floor(Math.random() * ( max - min+1 )) + min;
 }
 console.log(randomIntegerincldng(2,4));  */
+
+
+/*JavaScript Booleans - A JavaScript Boolean represents one of two values: true or false.
+
+Boolean Values - YES / No , TRUE / FALSE, ON / OFF.
+
+Boolean() function - Function to find out if an expression (or a variable) is true:
+Boolean(10>9) - // True
+//Or 10>9 / (10>9) */
+
+/* Comparisans and Conditions - ==, < , >. The Boolean value of an expression is the basis for all JS Comparisans and Conditions.
+Everything with a value is True eg: 100, 3.14, -15, "Hello", "false", 7 + 1 + 3.14
+Everything without a value is False eg: let x = 0 / -0 / ""; Boolean(x); Zero, -Zero, undefined, null, NaN and Empty string are false.
+
+Javascript Booleans 
+*/
+
