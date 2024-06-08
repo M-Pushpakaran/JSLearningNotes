@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>JavaScript setFullYear()</h2>
+    <p>The setFullYear() method can optionally set month and day.</p>
+    <p>Please note that month counts from 0. December is month 11:</p>
+    
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+d.setFullYear(2024);
+
+document.getElementById("demo").innerHTML = d;
+
+</script>
+
+<p id = "test"></p>
+<script>
+const c = new Date();
+c.setUTCMinutes(-330);
+document.getElementById("test").innerHTML = c;
+</script>
+
+<h2>JavaScript setMonth()</h2>
+<p>The setMonth() method sets the mont of a date object.</p>
+<p>Note that months count from 0. December is month 11:</p>
+
+<p id="demo11"></p>
+
+<script>
+const dd = new Date();
+dd.setMonth(2);
+document.getElementById("demo11").innerHTML = dd;
+</script>
+
+</body>
+</html>
+
+
