@@ -37,6 +37,22 @@ Boolean(10>9) - // True
 Everything with a value is True eg: 100, 3.14, -15, "Hello", "false", 7 + 1 + 3.14
 Everything without a value is False eg: let x = 0 / -0 / ""; Boolean(x); Zero, -Zero, undefined, null, NaN and Empty string are false.
 
-Javascript Booleans 
+Javascript Booleans as Objects - Normally JS Booleans are primitive values created from literals : let x = false;
+But booleans can also be defined as objects with the new keyword: let y = new Boolean(false);
+let x = false;  // typeof x returns boolean
+let y = new Boolean(false)   // typeof y returns object
+
+Do not create Boolean objects.
+The new keyword complicates the code and slows down execution speed.
+Boolean objects can produce unexpected results:
+
+When using the == operator, x and y are equal:
+let x = false;
+let y = new Boolean(false);
+
+When using the === operator, x and y are not equal:
+let x = false;
+let y = new Boolean(false);
 */
 
+// Comparing two JavaScript objects always return false.
