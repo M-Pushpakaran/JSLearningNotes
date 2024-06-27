@@ -174,5 +174,176 @@ text += x;
 
 
 /* JavaScript While Loop - https://www.w3schools.com/js/js_loop_while.asp
+Loops can execute a block of code as long as a specified condition is true.
+The While Loop - The while loop loops through a block of code as long as a specified condition is true.
+while (condition) {
+  // code block to be executed
+}
+Example :-
+while (i < 10) {
+  text += "The number is " + i;
+  i++;  //If you forget to increase the variable used in the condition, the loop will never end. This will crash your browser.
+}
+
+The Do While Loop
+The do while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+Syntax:
+do {
+  // code block to be executed
+}
+while (condition);
+
+Example
+do {
+  text += "The number is " + i;
+  i++;  //Do not forget to increase the variable used in the condition, otherwise the loop will never end!
+}
+while (i < 10); 
+
+Comparing For and While
+If you have read the previous chapter, about the for loop, you will discover that a while loop is much the same as a for loop, with statement 1 and statement 3 omitted.
+
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i = 0;
+let text = "";
+
+The loop in this example uses a for loop to collect the car names from the cars array:
+for (;cars[i];) {
+  text += cars[i];
+  i++;
+}
+
+The loop in this example uses a while loop to collect the car names from the cars array:
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i = 0;
+let text = "";
+
+while (cars[i]) {
+  text += cars[i];
+  i++;
+}
+*/
+
+/*JavaScript Break and Continue - https://www.w3schools.com/js/js_break.asp
+
+JavaScript Break and Continue - The break statement "jumps out" of a loop. The continue statement "jumps over" one iteration in the loop.
+
+The Break Statement
+
+You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch() statement.
+The break statement can also be used to jump out of a loop:
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}  //In the example above, the break statement ends the loop ("breaks" the loop) when the loop counter (i) is 3.
+
+The Continue Statement
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+This example skips the value of 3: 
+
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  text += "The number is " + i + "<br>";
+}
+
+
+
+JavaScript Labels - To label JavaScript statements you precede the statements with a label name and a colon:
+label:
+statements
+
+The break and the continue statements are the only JavaScript statements that can "jump out of" a code block.
+
+Syntax:
+break labelname;
+continue labelname;
+
+The continue statement (with or without a label reference) can only be used to skip one loop iteration.
+The break statement, without a label reference, can only be used to jump out of a loop or a switch.
+With a label reference, the break statement can be used to jump out of any code block: 
+
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+list: {
+  text += cars[0] + "<br>";
+  text += cars[1] + "<br>";
+  break list;
+  text += cars[2] + "<br>";
+  text += cars[3] + "<br>";
+}
+
+A code block is a block of code between { and }.*/
+
+
+/*JavaScript Iterables - https://www.w3schools.com/js/js_iterables.asp
+
+
+Iterables are iterable objects (like Arrays). Iterables can be accessed with simple and efficient code.
+Iterables can be iterated over with for..of loops
+
+The For Of Loop - The JavaScript for..of statement loops through the elements of an iterable object.
+Syntax
+for (variable of iterable) {
+  // code block to be executed
+}
+
+Iterating - Iterating is easy to understand. It simply means looping over a sequence of elements.
+Here are some easy examples:
+Iterating over a String
+Iterating over an Array
+
+
+
+Iterating Over a String
+
+You can use a for..of loop to iterate over the elements of a string:
+Example
+const name = "W3Schools";
+
+for (const x of name) {
+  // code block to be executed
+}
+
+
+Iterating Over an Array
+
+You can use a for..of loop to iterate over the elements of an Array:
+Example 1
+const letters = ["a","b","c"];
+
+for (const x of letters) {
+  // code block to be executed
+}
+
+const numbers = [2,4,6,8];
+
+for (const x of numbers) {
+  console.log(x);// code block to be executed
+}
+
+
+Iterating Over a Set
+
+You can use a for..of loop to iterate over the elements of a Set:
+Example
+const letters = new Set(["a","b","c"]);
+
+for (const x of letters) {
+  // code block to be executed
+}
+
+
+Iterating Over a Map
+
+You can use a for..of loop to iterate over the elements of a Map:
+Example
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+for (const x of fruits) {
+  // code block to be executed
+}
 
 */
